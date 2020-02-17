@@ -1,0 +1,10 @@
+.navbar {
+    font-family: 'Quicksand', sans-serif;
+}
+ul {
+    list-style-type:none;
+}
+ul li {
+    display:inline-block;
+    width:100px;
+}
