@@ -1,1 +1,19 @@
-<p>people works!</p>
+<h2>People</h2>
+
+<!-- <button class="btn btn-success" (click)="onShowAllPeople()">Begin</button> -->
+
+<div *ngFor="let person of results">
+    <div class="img">
+        
+    </div>
+    <h5> 
+        <a [title]="person.name">
+            {{ person.name }} 
+        </a>
+    </h5>
+
+    <!-- <p *ngIf="product.description">
+        Description: {{product.description}}
+    </p> -->
+    
+</div>

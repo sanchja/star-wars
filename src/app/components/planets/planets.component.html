@@ -1,1 +1,19 @@
-<p>planets works!</p>
+<h2>Planets</h2>
+
+<!-- <button class="btn btn-success" (click)="onShowAllPeople()">Begin</button> -->
+
+<div *ngFor="let planet of results">
+    <div class="img">
+        
+    </div>
+    <h5> 
+        <a [title]="planet.name">
+            {{ planet.name }} 
+        </a>
+    </h5>
+
+    <!-- <p *ngIf="product.description">
+        Description: {{product.description}}
+    </p> -->
+    
+</div>
