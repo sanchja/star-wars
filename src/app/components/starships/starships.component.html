@@ -1,19 +1,14 @@
-<h2>Starships</h2>
 
-<!-- <button class="btn btn-success" (click)="onShowAllPeople()">Begin</button> -->
+<div class="container item">
+    <h2 class="titles">Starships</h2>
 
 <div *ngFor="let star_ship of results">
-    <div class="img">
-        
-    </div>
-    <h5> 
-        <a [title]="star_ship.name">
-            {{ star_ship.name }} 
-        </a>
+    <div class="img"></div>
+    <h5 [title]="star_ship.name">
+        {{ star_ship.name }} 
     </h5>
-
-    <!-- <p *ngIf="product.description">
-        Description: {{product.description}}
-    </p> -->
-    
+    <p>Model: {{ star_ship.model }}<br>
+        Hyperdrive Rating: {{ star_ship.hyperdrive_rating }}
+    </p>
+    <hr>
 </div>

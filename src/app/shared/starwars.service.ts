@@ -26,8 +26,15 @@ export class StarwarsService {
         map(data => {
           return data['results'];
       })
-    )  
-    
+    )   
+  }
+  getThreePeople(): Observable<IPeople> {
+    return this.http.get<IPeople>(this.peopleApiUrl)
+      .pipe(
+        map(data => {
+          return data['results'];
+      })
+    )
   }
   // return all Star Ships
   getAllStarShips(): Observable<IStarships> {

@@ -15,29 +15,17 @@ export class PeopleComponent implements OnInit {
 
 
   ngOnInit() {
-    
       return this.starwarsService$.getAllPeople()
         .subscribe(res => this.results = res);
- 
   }
 
- 
 
+  onShowAllPeople() {
+    return this.starwarsService$.getAllPeople()
+        .subscribe(res => this.results = res);
+    }
   
-  // onShowAllPeople() {
-  //   return this.starwarsService$.getAllPeople()
-  //   .subscribe( (res) => {
-  //     this.people = res;
-  //   })
-  
-   
-
-
-  // onShowThreePeople() {
-  //   this.data = this.starwarsService$.getThreePeople();
-  // }
-  
-  // onHideAllPeople() {
-  //   this.data = [];
-  // }
+  onHideAllPeople() {
+    this.results = [];
+  }
 }

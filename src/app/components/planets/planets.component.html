@@ -1,19 +1,13 @@
-<h2>Planets</h2>
-
-<!-- <button class="btn btn-success" (click)="onShowAllPeople()">Begin</button> -->
+<div class="container item">
+    <h2 class="titles">Planets</h2>
 
 <div *ngFor="let planet of results">
-    <div class="img">
-        
-    </div>
-    <h5> 
-        <a [title]="planet.name">
-            {{ planet.name }} 
-        </a>
+    <div class="img"></div>
+    <h5 [title]="planet.name">
+        {{ planet.name }} 
     </h5>
-
-    <!-- <p *ngIf="product.description">
-        Description: {{product.description}}
-    </p> -->
-    
+    <p>Climate: {{ planet.climate }}<br>
+        Population: {{ planet.population }}
+    </p>
+    <hr>
 </div>

@@ -1,3 +1,42 @@
-.container {
-    margin-top: 100px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./assets/sw_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+/* .container {
+    
+} */
+.navbar-brand {
+    margin-right: 5rem;
+}
+[title]:hover {
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+}
+button {
+    margin: 20px 50px;
+}
+.item {
+    height: auto;
+    background-color: rgba(245, 240, 240, 0.735);
+    border-radius: 8px;
+}
+.titles {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url('./assets/sw_background_mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    button {
+        margin: 20px 20px;
+    }
 }

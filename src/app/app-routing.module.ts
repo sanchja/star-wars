@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'people', component: PeopleComponent },
   { path: 'starships', component: StarshipsComponent },
   { path: 'planets', component: PlanetsComponent },
-  // { path: '**', redirectTo: '/people', pathMatch: 'full'}
+  { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({
