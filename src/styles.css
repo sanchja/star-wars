@@ -8,6 +8,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+p strong {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+}
 .container {
     padding: 20px;    
 }
