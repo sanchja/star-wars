@@ -8,6 +8,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { PeopleComponent } from './components/people/people.component';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { PlanetsComponent } from './components/planets/planets.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PlanetsComponent } from './components/planets/planets.component';
     NavComponent,
     PeopleComponent,
     StarshipsComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,

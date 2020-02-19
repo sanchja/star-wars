@@ -1,15 +1,14 @@
-
-<div class="container item">
+<div class="componentHeaders">
     <h2 class="titles">People</h2>
     <div class="center">
-        <button class="btn btn-warning" (click)="onHideAllPeople()">Hide all</button>
-        <button class="btn btn-warning" (click)="onShowAllPeople()">Show all</button>
+        <button class="btn btn-warning btn-small" (click)="onHideAllPeople()">Hide all</button>
+        <button class="btn btn-warning btn-small" (click)="onShowAllPeople()">Show all</button>
     </div>
-    
-
+</div>  
+<div class="container item">
     <div *ngFor="let person of results">
         <div class="img"></div>
-        <h5 [title]="person.name">
+        <h5 ngClass="titleClass" [title]="person.name">
             {{ person.name }} 
         </h5>
         <div>

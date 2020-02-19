@@ -1,10 +1,11 @@
+<div class="componentHeaders">
+    <h2 class="titles">Starships</h2>
+</div>
 
 <div class="container item">
-    <h2 class="titles">Starships</h2>
-
 <div *ngFor="let star_ship of results">
     <div class="img"></div>
-    <h5 [title]="star_ship.name">
+    <h5 ngClass="titleClass" [title]="star_ship.name">
         {{ star_ship.name }} 
     </h5>
     <p>Model: {{ star_ship.model }}<br>

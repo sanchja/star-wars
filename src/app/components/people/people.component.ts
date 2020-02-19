@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { StarwarsService } from '../../shared/starwars.service';
 import { IPeople } from '../../shared/IPeople.interface';
 
@@ -28,4 +28,5 @@ export class PeopleComponent implements OnInit {
   onHideAllPeople() {
     this.results = [];
   }
+
 }

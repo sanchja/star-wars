@@ -9,6 +9,7 @@ import { IPlanets } from '../../shared/IPlanets.interface';
 })
 export class PlanetsComponent implements OnInit {
   results;
+
   constructor(private starwarsService$: StarwarsService) { }
 
   ngOnInit() {
@@ -17,5 +18,6 @@ export class PlanetsComponent implements OnInit {
       .subscribe(res => this.results = res);
 
   }
+
 
 }
