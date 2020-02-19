@@ -15,8 +15,8 @@ export class PeopleComponent implements OnInit {
 
 
   ngOnInit() {
-      return this.starwarsService$.getAllPeople()
-        .subscribe(res => this.results = res);
+      // return this.starwarsService$.getAllPeople()
+      //   .subscribe(res => this.results = res);
   }
 
 
