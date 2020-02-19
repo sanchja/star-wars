@@ -18,6 +18,9 @@ body {
 .navbar-brand {
     margin-right: 5rem;
 }
+.bg-dark {
+  background-color: #0a0e13!important;
+}
 [title]:hover {
     cursor: pointer;
 }
